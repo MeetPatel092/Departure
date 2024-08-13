@@ -1,16 +1,21 @@
-# bhagavad_gita
+# Bhagavad Gita 
 
-A new Flutter project.
+This Flutter app provides a digital version of the Bhagavad Gita with various features, including a detailed view of verses, a home page, and more.
+
+## Features
+
+- **Home Page**: The main landing page of the app.
+- **Splash Screen**: An introductory splash screen displayed at the start.
+- **Detail Page**: Displays detailed information or verses from the Bhagavad Gita.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+Ensure you have Flutter installed on your machine. If not, you can download it [here](https://flutter.dev/docs/get-started/install).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Running the App
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/bhagavad_gita_app.git
