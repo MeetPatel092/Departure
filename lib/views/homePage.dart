@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.favorite_border),
             onPressed: () {
-              // Add your onPressed code here!
+              Navigator.of(context).pushNamed("like_page");
             },
           ),
         ],
@@ -47,6 +47,11 @@ class _HomePageState extends State<HomePage> {
               "assets/images/HD-wallpaper-shree-krishna-bhagavad-gita-lord-shiva-mahabharata-ramayan.jpg",
               fit: BoxFit.cover,
             ),
+          ),
+          Container(
+            height: double.infinity,
+            width: double.infinity,
+            color: Colors.black.withOpacity(0.5),
           ),
           FutureBuilder(
             future: jsonData,
@@ -78,26 +83,26 @@ class _HomePageState extends State<HomePage> {
                             },
                             child: Container(
                               margin: EdgeInsets.symmetric(
-                                  vertical: 5, horizontal: 10),
+                                  vertical: 8, horizontal: 10),
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(0.2),
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(
-                                  color: Colors.white.withOpacity(0.2),
-                                  width: 1.5,
+                                  color: Colors.white.withOpacity(0.3),
+                                  width: 1.8,
                                 ),
                               ),
-                              padding: EdgeInsets.all(10),
+                              padding: EdgeInsets.all(12),
                               child: ListTile(
-                                title: Text(
-                                  "${allData[i]['chapter']}",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
+                                // title: Text(
+                                //   "${allData[i]['chapter']}",
+                                //   style: TextStyle(
+                                //     color: Colors.white,
+                                //     fontWeight: FontWeight.bold,
+                                //   ),
+                                // ),
                                 subtitle: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Text(
                                       "${allData[i]['sanskrit']}",
@@ -107,16 +112,16 @@ class _HomePageState extends State<HomePage> {
                                         fontStyle: FontStyle.italic,
                                       ),
                                     ),
-                                    SizedBox(height: 5),
-                                    Align(
-                                      alignment: Alignment.bottomRight,
-                                      child: Text(
-                                        "${allData[i]['verse']}",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                    ),
+                                    // SizedBox(height: 5),
+                                    // Align(
+                                    //   alignment: Alignment.bottomRight,
+                                    //   child: Text(
+                                    //     "${allData[i]['verse']}",
+                                    //     style: TextStyle(
+                                    //       color: Colors.white,
+                                    //     ),
+                                    //   ),
+                                    // ),
                                   ],
                                 ),
                               ),

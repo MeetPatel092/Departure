@@ -1,17 +1,19 @@
 import 'package:bhagavad_gita/views/detailPage.dart';
 import 'package:bhagavad_gita/views/homePage.dart';
-import 'package:bhagavad_gita/views/splaceScreen.dart';
+import 'package:bhagavad_gita/views/like_page.dart';
+import 'package:bhagavad_gita/views/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'splacepage',
+      initialRoute: 'splash_page',
       routes: {
-        "/": (context) => HomePage(),
-        "splacepage": (context) => SplaceScreen(),
-        "detailpage": (context) => DetailPage(),
+        "/": (context) => const HomePage(),
+        "splash_page": (context) => const SplashPage(),
+        "detailpage": (context) => const DetailPage(),
+        "like_page": (context) => const LikedShlokasPage(),
       },
     ),
   );

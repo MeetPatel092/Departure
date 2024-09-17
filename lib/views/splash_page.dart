@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class SplaceScreen extends StatefulWidget {
-  const SplaceScreen({super.key});
+class SplashPage extends StatefulWidget {
+  const SplashPage({super.key});
 
   @override
-  State<SplaceScreen> createState() => _SplaceScreenState();
+  State<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplaceScreenState extends State<SplaceScreen> {
+class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     Timer(const Duration(seconds: 3), () {
@@ -31,13 +31,12 @@ class _SplaceScreenState extends State<SplaceScreen> {
               fit: BoxFit.cover,
             ),
           ),
-          // Black shadow overlay
+
           Container(
             height: double.infinity,
             width: double.infinity,
             color: Colors.black.withOpacity(0.5),
           ),
-          // Centered text
           Container(
             alignment: Alignment(0.2, 0.35),
             child: Text(
